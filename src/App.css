@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.gradient__bg {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(109.64deg, #2fbcb3 -40.27%, #175754 60.29%),
+    url(./assets/images/bg-fill.png);
+  background: -webkit-linear-gradient(
+      109.64deg,
+      #2fbcb3 -40.27%,
+      #175754 60.29%
+    ),
+    url(./assets/images/bg-fill.png);
+  background: -o-linear-gradient(109.64deg, #2fbcb3 -40.27%, #175754 60.29%),
+    url(./assets/images/bg-fill.png);
+  background: -ms-linear-gradient(109.64deg, #2fbcb3 -40.27%, #175754 60.29%),
+    url(./assets/images/bg-fill.png);
+  background: linear-gradient(109.64deg, #2fbcb3 -40.27%, #175754 60.29%),
+    url(./assets/images/bg-fill.png);
+  /* background: -moz-radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 42, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    ),
+    url(./assets/images/logo.svg); */
+
+  /* background-image: url(./assets/wave.png) ; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: overlay;
+}
+
+.bg-banner {
+  background: url(./assets/images/banner_effect.png), #175754;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.white__bg_line {
+  background: url(./assets/images/line.svg);
+
+  /* background-image: url(./assets/wave.png) ; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.white__wave_line {
+  background: url(./assets/images/wave_line.svg);
+
+  /* background-image: url(./assets/wave.png) ; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.video_banner {
+  background: url("./assets/images/video_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.fade_bg_hero {
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(247, 253, 252, 0) 4.3%,
+    rgba(247, 253, 252, 0.5) 121.2%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(247, 253, 252, 0) 4.3%,
+    rgba(247, 253, 252, 0.5) 121.2%
+  );
+  background: -o-linear-gradient(
+    180deg,
+    rgba(247, 253, 252, 0) 4.3%,
+    rgba(247, 253, 252, 0.5) 121.2%
+  );
+  background: -ms-linear-gradient(
+    180deg,
+    rgba(247, 253, 252, 0) 4.3%,
+    rgba(247, 253, 252, 0.5) 121.2%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(247, 253, 252, 0) 4.3%,
+    rgba(247, 253, 252, 0.5) 121.2%
+  );
+  background-blend-mode: overlay;
+}
+
+.radial_bg_op {
+  background: radial-gradient(
+    86.08% 87.9% at 56.27% 103.16%,
+    #0b045a 34.88%,
+    rgba(11, 4, 90, 0.59) 100%
+  );
+}
+
+.radial_bg {
+  background: radial-gradient(
+    86.08% 87.9% at 56.27% 103.16%,
+    #0b045a 34.88%,
+    rgba(11, 4, 90, 0.59) 100%
+  );
+}
+
+@media (min-width: 1024px) {
+  .radial_bg {
+    background: radial-gradient(
+      65.46% 65.58% at 65.46% 27.22%,
+      #0b045a 54.88%,
+      rgba(11, 4, 90, 0.59) 100%
+    );
+  }
+
+  .radial_bg_op {
+    background: radial-gradient(
+      90.47% 99.78% at 17.47% 39.54%,
+      #0b045a 34.88%,
+      rgba(11, 4, 90, 0.59) 100%
+    );
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.gradient__bar {
+  background: var(--gradient-bar);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient__bar_blue {
+  background: var(--gradient-bar-blue);
+}
+
+.footer__bg {
+  background: var(--color-footer);
 }
