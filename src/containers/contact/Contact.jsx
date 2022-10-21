@@ -18,7 +18,7 @@ const Contact = () => {
             Friday 22:00 UTC
           </p>
         </div>
-       
+
         <div className="mt-32">
           <div className="flex md:flex-row flex-col  gap-8 justify-around text-neutral">
             <div className="flex gap-4 items-center">
@@ -27,7 +27,12 @@ const Contact = () => {
               </div>
               <div className="space-y-1">
                 <h6 className="font-semibold">Turkey</h6>
-                <p>+905 488 240 571</p>
+                <a
+                  href="https://wa.me/message/TRJYPYBKNGKQK1"
+                  target="_blank"
+                  rel="noreferrer">
+                  +905 488 240 571
+                </a>
               </div>
             </div>
             <div className="flex gap-4 items-center">
@@ -36,7 +41,9 @@ const Contact = () => {
               </div>
               <div className="space-y-1">
                 <h6 className="font-semibold">Email</h6>
-                <p>info@pataraexchange.com</p>
+                <a href="mailto:info@pataraexchange.com">
+                  info@pataraexchange.com
+                </a>
               </div>
             </div>
             <div className="flex gap-4 items-center">
@@ -45,7 +52,12 @@ const Contact = () => {
               </div>
               <div className="space-y-1">
                 <h6 className="font-semibold">Nigeria</h6>
-                <p>+234 816 998 6056</p>
+                <a
+                  href="https://wa.me/message/RFB4WFBPM6WTL1"
+                  target="_blank"
+                  rel="noreferrer">
+                  +234 816 998 6056
+                </a>
               </div>
             </div>
           </div>
