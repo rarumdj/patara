@@ -39,7 +39,7 @@ const Hero = () => {
                 Trade your <span className="text-orange-400">crypto</span>{" "}
                 instantly
               </h1>
-              <p className="text-white text-sm sm:text-base">
+              <p className="text-white text-sm sm:text-[20px] font-light leading-6">
                 A user friendly platform to trade between cryptocurrencies,
                 stablecoins and environmental assets in one easy step.
               </p>
@@ -48,10 +48,9 @@ const Hero = () => {
           {clicked === 1 && (
             <>
               <h1 className=" w-full text-white font-bold lg:text-6xl md:text-5xl sm:text-4xl text-3xl">
-                Swap your <span className="text-orange-400">crypto</span>
-                instantly
+                Cross border <span className="text-orange-400">payments</span>
               </h1>
-              <p className="text-white text-sm sm:text-base">
+              <p className="text-white text-sm sm:text-[20px] font-light leading-6">
                 Initiate instant money transfers between over 16+ countries
                 across the globe in just one click
               </p>
@@ -60,11 +59,12 @@ const Hero = () => {
           {clicked === 2 && (
             <>
               <h1 className=" w-full text-white font-bold lg:text-6xl md:text-5xl sm:text-4xl text-3xl">
-                Cross border <span className="text-orange-400">payments</span>
+                Swap your <span className="text-orange-400">crypto </span>
+                instantly
               </h1>
-              <p className="text-white text-sm sm:text-base">
-                Initiate instant money transfers between over 16+ countries
-                across the globe in just one click
+              <p className="text-white text-sm sm:text-[20px] font-light leading-6">
+                Convert your crypto instantly to over 10 different fiat
+                currencies and get paid out
               </p>
             </>
           )}

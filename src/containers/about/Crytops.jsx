@@ -34,8 +34,7 @@ const Cryptos = () => {
       <div className="container text-neutral md:p-24 p-8 mx-auto bg-[#175754] bg-opacity-5 rounded-2xl">
         <div className="text-center mb-16 w-full flex justify-center">
           <h1 className="sm:text-4xl text-xl font-bold title-font text-gray-900 mb-4 md:w-10/12">
-            The currency pairs we trade on Cryptocurrencies and other
-            Cryptocurrencies.
+            We Trade the following Cryptocurrencies
           </h1>
         </div>
 
@@ -85,7 +84,7 @@ const Cryptos = () => {
         </div>
 
         <div className="text-center mb-16 w-full flex flex-col justify-center items-center">
-          <p className="sm:text-sm text-base font-medium title-font text-gray-900 my-10 md:w-6/12">
+          <p className="sm:text-base text-sm title-font text-gray-900 my-10 md:w-6/12">
             If you would like to trade or swap any other crypto not on this
             list, please contact us here to do that.
           </p>

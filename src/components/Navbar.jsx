@@ -93,11 +93,19 @@ const Navbar = () => {
             <nav className="md:flex hidden lg:space-x-16 space-x-8">
               <ul className="flex flex-row space-x-8  items-center text-white font-semibold lg:text-base text-sm">
                 {MenuItems.map((items, index) => {
+                  let path;
+                  if (pathname.length > 1) {
+                    path = pathname.substring(1);
+                  } else {
+                    path = pathname;
+                  }
                   return (
                     <li key={index}>
                       <NavLink
-                        className={({ isActive }) =>
-                          isActive ? items.cNameActive : items.cName
+                        className={
+                          path.includes(items.url)
+                            ? items.cNameActive
+                            : items.cName
                         }
                         to={items.url}
                         onClick={handleNavClick}>
@@ -161,11 +169,19 @@ const Navbar = () => {
                 <div className="space-y-16 w-full max-w-md">
                   <ul className="flex flex-col space-y-10 items-center text-white font-semibold ">
                     {MenuItems.map((items, index) => {
+                      let path;
+                      if (pathname.length > 1) {
+                        path = pathname.substring(1);
+                      } else {
+                        path = pathname;
+                      }
                       return (
                         <li key={index}>
                           <NavLink
-                            className={({ isActive }) =>
-                              isActive ? items.cNameActive : items.cName
+                            className={
+                              path.includes(items.url)
+                                ? items.cNameActive
+                                : items.cName
                             }
                             to={items.url}
                             onClick={handleNavClick}>

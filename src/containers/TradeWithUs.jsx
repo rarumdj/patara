@@ -77,11 +77,11 @@ const TradeWithUs = () => {
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 md:text-2xl text-lg font-medium mb-3">
-                Secure and Trusted
+                No hidden fee
               </h2>
               <p className="leading-relaxed text-base">
-                Our platform has built in security measures to guarantee users
-                protection
+                We provide a platform that facilitates transparency and
+                accountability while trading
               </p>
             </div>
           </motion.div>
@@ -97,11 +97,11 @@ const TradeWithUs = () => {
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 md:text-2xl text-lg font-medium mb-3">
-                Secure and Trusted
+                Profit in Crypto
               </h2>
               <p className="leading-relaxed text-base">
-                Our platform has built in security measures to guarantee users
-                protection
+                This platform provides a means for users to trade and make
+                profits from different cryptocurrencies
               </p>
             </div>
           </motion.div>
@@ -117,11 +117,11 @@ const TradeWithUs = () => {
             </div>
             <div className="flex-grow">
               <h2 className="text-gray-900 md:text-2xl text-lg font-medium mb-3">
-                Secure and Trusted
+                Earn Rewards
               </h2>
               <p className="leading-relaxed text-base">
-                Our platform has built in security measures to guarantee users
-                protection
+                We provide time framed activities and promotions that enable
+                eligible users earn Rewards for additional gains.
               </p>
             </div>
           </motion.div>
