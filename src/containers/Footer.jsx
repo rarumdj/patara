@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { logo } from "../assets/images";
 
-const Footer = () => {
+function Footer() {
+ 
+
   return (
     <footer className="bg-[#175754] body-font">
       <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
@@ -163,6 +165,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
