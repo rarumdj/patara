@@ -136,10 +136,10 @@ const Hero = () => {
               </div>
               <div className="flex-grow pl-6">
                 <h2 className="font-bold title-font text-white mb-1 md:text-2xl text-xl">
-                  193
+                  14+
                 </h2>
                 <p className="leading-relaxed text-white md:text-base text-sm">
-                  Countries Reached
+                  countries reached
                 </p>
               </div>
             </div>
@@ -151,10 +151,10 @@ const Hero = () => {
               </div>
               <div className="flex-grow pl-6">
                 <h2 className="font-bold title-font text-white mb-1 md:text-2xl text-xl">
-                  Over 10K
+                  Over 1,000+  
                 </h2>
                 <p className="leading-relaxed text-white md:text-base text-sm">
-                  Cryptocurrency Users
+                active users 
                 </p>
               </div>
             </div>
@@ -167,10 +167,10 @@ const Hero = () => {
               </div>
               <div className="flex-grow pl-6 ">
                 <h2 className="font-bold title-font text-white mb-1 md:text-2xl text-xl">
-                  $50B
+                Over $50M 
                 </h2>
                 <p className="leading-relaxed text-white md:text-base text-sm">
-                  Digital Currency Exchanged
+                Traded
                 </p>
               </div>
             </div>
