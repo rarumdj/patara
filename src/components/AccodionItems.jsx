@@ -12,7 +12,7 @@ const AccodionItems = ({ faq, active, onToggle }) => {
         } w-full p-6 rounded-lg bg-[#2FBCB3] bg-opacity-10 border-b-2  border-[#2FBCB3]`}
       >
         <div className="flex cursor-pointer" onClick={onToggle}>
-          <h5 className={`md:text-xl text-gray-900 text-lg ${active ? " font-bold" : ""}`}>
+          <h5 className={`md:text-xl text-gray-900 text-base ${active ? " font-bold" : ""}`}>
             {question}
           </h5>
           <span className="ml-auto">
