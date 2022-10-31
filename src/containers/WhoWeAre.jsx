@@ -22,7 +22,7 @@ const WhoWeAre = () => {
         <div className="flex flex-col flex-wrap lg:py-6 md:-mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
           <div className="space-y-6">
             <h2 className="font-bold md:text-5xl text-2xl text-neutral opacity-80">Who we are</h2>
-            <p className="text-sm text-neutral opacity-50">
+            <p className="text-sm text-neutral md:text-xl opacity-80">
               We connect cryptocurrency traders with a wide a range of global
               financial markets through one single account in a safe, easy and
               secure environment.

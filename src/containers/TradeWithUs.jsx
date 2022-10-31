@@ -32,7 +32,7 @@ const TradeWithUs = () => {
           <h1 className="sm:text-5xl text-3xl font-bold title-font text-gray-900 mb-4">
             Why trade with us?
           </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">
             Here are a few reasons why you should choose to trade with us
           </p>
         </motion.div>
@@ -59,7 +59,7 @@ const TradeWithUs = () => {
               <h2 className="text-gray-900 md:text-2xl text-lg font-medium mb-3">
                 Secure and Trusted
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base text-gray-600">
                 Our platform has built in security measures to guarantee users
                 protection
               </p>
@@ -79,7 +79,7 @@ const TradeWithUs = () => {
               <h2 className="text-gray-900 md:text-2xl text-lg font-medium mb-3">
                 No hidden fee
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base text-gray-600">
                 We provide a platform that facilitates transparency and
                 accountability while trading
               </p>
@@ -99,7 +99,7 @@ const TradeWithUs = () => {
               <h2 className="text-gray-900 md:text-2xl text-lg font-medium mb-3">
                 Profit in Crypto
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base text-gray-600">
                 This platform provides a means for users to trade and make
                 profits from different cryptocurrencies
               </p>
@@ -119,7 +119,7 @@ const TradeWithUs = () => {
               <h2 className="text-gray-900 md:text-2xl text-lg font-medium mb-3">
                 Earn Rewards
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base text-gray-600">
                 We provide time framed activities and promotions that enable
                 eligible users earn Rewards for additional gains.
               </p>

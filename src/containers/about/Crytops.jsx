@@ -84,7 +84,7 @@ const Cryptos = () => {
         </div>
 
         <div className="text-center mb-16 w-full flex flex-col justify-center items-center">
-          <p className="sm:text-base text-sm title-font text-gray-900 my-10 md:w-6/12">
+          <p className="sm:text-xl text-sm title-font text-gray-900 my-10 md:w-6/12">
             If you would like to trade or swap any other crypto not on this
             list, please contact us here to do that.
           </p>

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { logo } from "../assets/images";
 
 function Footer() {
  
+const date = new Date()
 
   return (
     <footer className="bg-[#175754] body-font">
@@ -27,29 +29,24 @@ function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
+                <Link className="text-white hover:text-gray-50" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
-                  Who we are
-                </a>
+                <Link className="text-white hover:text-gray-50" to="/about">
+                  About
+                </Link>
               </li>
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
-                  Values
-                </a>
+                <Link className="text-white hover:text-gray-50" to="/contact">
+                  Contact
+                </Link>
               </li>
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
-                  Mission
-                </a>
-              </li>
-              <li>
-                <a className="text-white hover:text-gray-50" href="/">
+                <Link className="text-white hover:text-gray-50" to="/contact">
                   FAQs
-                </a>
+                </Link>
               </li>
             </nav>
           </div>
@@ -59,29 +56,29 @@ function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
+                <Link className="text-white hover:text-gray-50" to="/">
                   DeFi
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
+                <Link className="text-white hover:text-gray-50" to="/">
                   Crypto
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
+                <Link className="text-white hover:text-gray-50" to="/">
                   Blockchain Explorer
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
+                <Link className="text-white hover:text-gray-50" to="/">
                   NFT
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
+                <Link className="text-white hover:text-gray-50" to="/">
                   Trading
-                </a>
+                </Link>
               </li>
             </nav>
           </div>
@@ -91,14 +88,14 @@ function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
+                <Link className="text-white hover:text-gray-50" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-white hover:text-gray-50" href="/">
+                <Link className="text-white hover:text-gray-50" to="/contact">
                   FAQs
-                </a>
+                </Link>
               </li>
             </nav>
           </div>
@@ -107,7 +104,7 @@ function Footer() {
       <div className="bg-[#3cf4c3] bg-opacity-10">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-white text-sm text-center sm:text-left">
-            © 2022 PATARA EXCHANGE. All rights reserved
+            © {date.getFullYear()} PATARA EXCHANGE. All rights reserved
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a className="text-white" href="/">
@@ -132,7 +129,7 @@ function Footer() {
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </a>
-            <a className="ml-3 text-white" href="/">
+            <a className="ml-3 text-white" href="https://instagram.com/pataraexchange">
               <svg
                 fill="none"
                 stroke="currentColor"
