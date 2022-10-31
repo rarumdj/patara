@@ -25,19 +25,36 @@ const Form = ({ title }) => {
       draggable: true,
       progress: undefined,
     });
+
+  const Formerror = (msg) =>
+    toast.error(msg, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
   const [toSend, setToSend] = useState({
     email: "",
     message: "",
   });
 
   const sendEmail = (e) => {
+    if (!toSend.email) return Formerror("Please enter an email");
+    if (!toSend.email.includes("@"))
+      return Formerror("Please enter a valid email");
+    if (!toSend.message) return Formerror("Please enter a Message");
+
     e.preventDefault();
     emailjs
       .send(
-        "service_sf6tnoo",
-        "template_8jdbm5w",
+        process.env.REACT_APP_REACTJS_SERVICE_ID,
+        process.env.REACT_APP_REACTJS_TEMPLATE_ID,
         toSend,
-        "user_9TNYwIfklHc7RB3UrNHCj"
+        process.env.REACT_APP_REACTJS_KEY
       )
       .then((response) => {
         success();
@@ -78,7 +95,8 @@ const Form = ({ title }) => {
             type="email"
             id="email"
             name="email"
-            onClick={handleChange}
+            value={toSend.email}
+            onChange={handleChange}
             className="w-full rounded border-b-2 border-[#2FBCB3] bg-[#2FBCB3] bg-opacity-80   focus:border-[#2FBCB3]  text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
@@ -91,11 +109,14 @@ const Form = ({ title }) => {
           <textarea
             id="message"
             name="message"
-            onClick={handleChange}
+            value={toSend.message}
+            onChange={handleChange}
             className="w-full bg-[#2FBCB3] bg-opacity-80 rounded border-b-2 border-[#2FBCB3] focus:border-[#2FBCB3]  h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
         </div>
       </div>
-      <button className="mt-8 py-3 px-8 rounded-2xl font-bold text-center text-white bg-orange-400">
+      <button
+        onClick={sendEmail}
+        className="mt-8 py-3 px-8 rounded-2xl font-bold text-center text-white bg-orange-400">
         SUBMIT
       </button>
     </div>
